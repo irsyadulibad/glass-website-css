@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: .8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: .8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: .8;
+}
+
+ion-icon {
+    --border-color: transparent;
+    background: linear-gradient(#65dfc9, #6cdbeb);
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    width: 60%;
+    min-height: 80vh;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, .7),
+        rgba(255, 255, 255, .3)
+    );
+    border-radius: 1rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    margin: 2rem 0rem;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, .8),
+        rgba(255, 255, 255, .3)
+    );
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 10%;
+    left: 13%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, .7),
+        rgba(255, 255, 255, .3)
+    );
+    border-radius: 1rem;
+}
+
+.dashboard .user img {
+    border-radius: 50%;
+}
+
+.link {
+    display: flex;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    align-items: center;
+}
+
+.link i {
+    font-size: 1.8rem;
+    width: 2rem;
+}
+
+.link i:before {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+}
+
+.link h2 {
+    font-size: 1rem;
+    padding: 0rem 1rem;
+}
+
+.pro {
+    background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.pro h2 {
+    font-size: 1rem;
+    color: white;
+    width: 40%;
+    font-weight: 600;
+}
+
+.pro img {
+    position: absolute;
+    top: -8%;
+    width: 40%;
+}
+
+.games {
+    flex: 2;
+}
+
+/* Games */
+.status {
+    margin-bottom: 2rem;
+}
+
+.status input {
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, .7),
+        rgba(255, 255, 255, .3)
+    );
+    border: none;
+    padding: .5rem;
+    width: 50%;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left top,
+        rgba(255, 255, 255, .8),
+        rgba(255, 255, 255, .5)
+    );
+    border-radius: 2rem;
+    margin: 1.5rem 0rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, .2);
+}
+
+.card-info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-info p {
+    font-size: 1rem;
+}
+
+.progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: '';
+    background: rgb(236, 236, 236);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 60%;
+}
+
+.percentage {
+    font-size: 1rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
